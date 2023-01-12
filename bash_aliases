@@ -1,0 +1,10 @@
+shopt -s expand_aliases
+alias vim="nvim"
+alias rsync="rsync -avzC"
+alias shipit="~/Scripts/shipit.sh"
+alias runit="~/Scripts/runit.sh"
+alias cat="bat"
+alias ls="exa --git"
+alias gst="git status"
+alias grp="grep -r"
+alias docker="podman"
