@@ -2,11 +2,11 @@
 #
 # Opens a new tmux window or moves to it if it exists already,
 # changes into the top level of the current project directory,
-# and runs `npm run start` to start the app
+# and runs `npm run dev` to start the app
 path=$(expr $(pwd) : '\(\/Users\/pietarisulkava\/Projects\/[^\/]*\)')
 echo $path
-if ( tmux list-windows | grep -q "runit" ); then
-    tmux select-window -t runit
+if ( tmux list-windows | grep -q "devit" ); then
+    tmux select-window -t devit
 else
-    tmux new-window -n "runit" "cd $path ; npm run start"
+    tmux new-window -n "devit" "cd $path ; npm run dev"
 fi

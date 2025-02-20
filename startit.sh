@@ -5,8 +5,8 @@
 # and runs `npm run start` to start the app
 path=$(expr $(pwd) : '\(\/Users\/pietarisulkava\/Projects\/[^\/]*\)')
 echo $path
-if ( tmux list-windows | grep -q "runit" ); then
-    tmux select-window -t runit
+if ( tmux list-windows | grep -q "startit" ); then
+    tmux select-window -t startit
 else
-    tmux new-window -n "runit" "cd $path ; npm run start"
+    tmux new-window -n "startit" "cd $path ; npm run start"
 fi
